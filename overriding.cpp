@@ -5,7 +5,7 @@ class cricket{
     
 	public:
 		
-	void gertotleovers(){
+	void gettotleovers(){
 		
 		cout<<"your totle overs is 10"<<endl;
 	}
@@ -26,18 +26,18 @@ class Testmatch : public cricket{
 	
 	void gettotleovers(){
 		
-		cout<<"Testmatch-your totle overs is 20";
+		cout<<"Testmatch-your totle overs is 30";
 	}
 };
 
 int main(){ 
-
      
+cricket obj1;
+T20match obj2;
+Testmatch obj3;
 	 
-	 Testmatch obj2;
 	
-	 
-	obj2.cricket::gettotleovers();
-	obj2.T20match::gettotleovers(); 
-	obj2.Testmatch::gettotleovers();
+	obj1.gettotleovers(); 
+	obj2.gettotleovers(); 
+	obj3.gettotleovers();
 }
